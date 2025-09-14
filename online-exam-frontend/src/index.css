@@ -1,0 +1,14 @@
+/* globals.css or index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles for select dropdowns */
+@layer base {
+  select {
+    @apply bg-gray-800 text-white border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  option {
+    @apply bg-gray-800 text-white;
+  }
+}
